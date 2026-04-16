@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LoveLive! 学园偶像祭 连接教学</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Segoe UI", "PingFang SC", "Hiragino Sans", sans-serif;
+    background: linear-gradient(135deg, #ffd1ec, #d1f0ff);
+    color: #444;
+}
+
+/* 顶部标题 */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* 主容器 */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* 卡片 */
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+/* 卡片顶部彩条 */
+.card::before {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #ff6ec4, #42e695);
+}
+
+/* 标题 */
+h2 {
+    margin-top: 0;
+    color: #ff4fa3;
+}
+
+/* 步骤 */
+.step {
+    background: #f8f9ff;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-left: 4px solid #ff6ec4;
+    transition: 0.2s;
+}
+
+.step:hover {
+    transform: translateX(4px);
+}
+
+/* URL 样式 */
+.url {
+    color: #5b8cff;
+    font-weight: bold;
+}
+
+/* 注意框 */
+.note {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff0f6;
+    border: 2px dashed #ff85c0;
+    color: #a8071a;
+}
+
+/* 列表 */
+ul {
+    padding-left: 20px;
+}
+
+/* 小标签 */
+.tag {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>LoveLive! 学园偶像祭</h1>
+    <p>连接教学 / 安装指南</p>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <span class="tag">📘 教学说明</span>
+        <p>
+            本文为《LoveLive! 学园偶像祭》连接教学及安装指南，分iOS与安卓两个客户端版本进行说明。
+
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🍎 iOS 安装教程</h2>
+
+        <p><strong>需要提前准备的工具：</strong></p>
+        <ul>
+            <li>电脑（Windows / macOS）</li>
+            <li>登录游戏需要的苹果设备（iPhone / iPad）</li>
+        </ul>
+
+        <div class="step">1. 在电脑端点击图标，下载提供的 LLSIF.ipa 文件</div>
+
+        <a href="files/LLSIF.ipa" download>
+            <img src="img/ipa.png" style="width: 20%; border-radius: 10px; margin: 15px 0;" alt="下载 LLSIF IPA">
+        </a>
+
+        <div class="step">
+            2. 在电脑端前往下载 Sideloadly! ：
+            <br><a class="url" href="https://sideloadly.io/" target="_blank" rel="noopener noreferrer">https://sideloadly.io/</a>
+        </div>
+
+        <img src="img/sideloadly.png" style="width: 60%; border-radius: 10px; margin: 15px 0;">
+
+        <div class="step">
+            3. 启动Sideloadly!，并将ipa文件拖入左侧方框中，在iDevice下拉框中找到需要游玩的苹果设备，点击开始 (Start) 按钮进行安装
+        </div>
+
+        <img src="img/sideloading.png" style="width: 60%; border-radius: 10px; margin: 15px 0;">
+
+        <div class="step">
+            4. 会有弹窗提示登录Apple ID（用于签名），输入自己的账号与密码即可
+        </div>
+
+        <div class="step">
+            5. 运行途中确保苹果设备是解锁并亮屏的状态，等待下方的Log出现完成的字样后即安装成功，手机端会出现安装的应用
+        </div>
+
+        <img src="img/app_installed.png" style="width: 20%; border-radius: 10px; margin: 15px 0;">
+
+        <div class="step">
+            6. 在苹果设备上开启开发者模式：
+            <br>设置 → 隐私与安全性 → 开发者模式。点击打开开发者模式后面的按钮。在下方弹出的窗口中，点击选择重启即可
+        </div>
+
+        <div class="step">
+            7. 重启后，需要信任应用：
+            <br>设置 → 通用 → VPN与设备管理，会找到下方开发者应用中自己刚才登录的Apple ID，是未信任状态，点击信任并输入解锁PIN，即可启动应用程序
+        </div>
+
+        <div class="step">
+            8. 启动后，检查顶部的绿色字体为对应的URL: sif.mihane.cc ，即为成功，点击屏幕开始建号下载数据
+        </div>
+
+        <img src="img/app_index.jpg" style="width: 60%; border-radius: 10px; margin: 15px 0;">
+
+        <div class="note">
+            ⚠ 注意：此iOS安装方法为旁加载，签名时效七天，到期需重复步骤3-5，无需且请勿卸载应用，会导致账号丢失！
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🤖 安卓安装教程</h2>
+
+        <p><strong>需要提前准备的工具：</strong></p>
+        <ul>
+            <li>登录游戏需要的安卓设备一台</li>
+        </ul>
+
+        <div class="step">1. 点击图标，下载 APK 文件</div>
+
+        <a href="files/lovelive-community.apk" download>
+            <img src="img/apk.png" style="width: 20%; border-radius: 10px; margin: 15px 0;" alt="下载 LLSIF APK">
+        </a>
+
+        <div class="step">2. 点击安装，根据自身定制系统的情况进行信任并安装应用</div>
+
+        <div class="step">3. 安装完成后启动一次然后退出，注意不需要点击开始画面</div>
+
+        <div class="step">4. 长按桌面上的应用，弹出服务器设置 (Server Config)的按钮，点击进入</div>
+
+        <img src="img/server_config.jpg" style="width: 40%; border-radius: 10px; margin: 15px 0;">
+
+        <div class="step">
+            5. 将URL修改为对应服务器地址：
+            <br><span class="url">http://sif.mihane.cc</span>
+        </div>
+
+        <img src="img/server_config_setting.jpg" style="width: 60%; border-radius: 10px; margin: 15px 0;">
+
+        <div class="step">
+            6. 启动后，检查顶部的绿色字体为对应的URL: sif.mihane.cc ，即为成功，点击屏幕开始建号下载数据
+        </div>
+
+        <img src="img/app_index_android.jpg" style="width: 60%; border-radius: 10px; margin: 15px 0;">
+
+        <div class="note">
+            ⚠ 注意：请勿卸载应用，会导致账号丢失！
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    ✨ LoveLive 风格教学页面 · Designed with ❤️
+</footer>
+
+</body>
+</html>
